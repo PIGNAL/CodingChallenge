@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CodingChallenge.Data">
+      <HintPath>..\lib\CodingChallenge.Data.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -184,10 +187,6 @@
     <ProjectReference Include="..\CodingChallenge.BusinessLogic\CodingChallenge.BusinessLogic.csproj">
       <Project>{26d15dcb-bda4-47f3-a5b6-d282902a9969}</Project>
       <Name>CodingChallenge.BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CodingChallenge.DataAccess\CodingChallenge.DataAccess.csproj">
-      <Project>{82e69edf-f40a-49c6-83a8-dac2cc40c8aa}</Project>
-      <Name>CodingChallenge.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

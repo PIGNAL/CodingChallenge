@@ -45,7 +45,8 @@ h1 {
    margin-bottom: 2px;
    font-family: Arial, san-serif;
 } 
-#contact-form input { 
+.cuadro-detalle #contact-form input,
+.cuadro-detalle #contact-form textarea { 
    width:100%;
    background: #fff;
    border: 0; 
@@ -53,29 +54,14 @@ h1 {
    -webkit-border-radius: 4px;  
    border-radius: 4px;
    margin-bottom: 25px;  
-   padding: 5px;  
-}  
+   padding: 5px;
+   margin:auto;  
+}
+#contact-form textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+}
 #contact-form input:focus {  
    background-color: #E5E6E7; 
 }  
-
-input:required {  
-   box-shadow: none;
-   -moz-box-shadow: none;  
-   -webkit-box-shadow: none;  
-   -o-box-shadow: none;  
-} 
-#contact-form .required {  
-   font-weight:bold;  
-   color: #E5E6E7;      
-}
-@media only screen and (max-width: 580px) {
-   #contact-form{
-      left: 3%;
-      margin-right: 3%;
-      width: 88%;
-      margin-left: 0;
-      padding-left: 3%;
-      padding-right: 3%;
-   }
-}

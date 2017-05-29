@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CodingChallenge.Data.Classes;
+using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace CodingChallenge.ViewModels
@@ -7,24 +8,21 @@ namespace CodingChallenge.ViewModels
     {
         [HiddenInput(DisplayValue = false)]
         [Required]
-        public int TitleId { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Descripcion { get; set; }
 
         [Required]
-        public string Symbol { get; set; }
+        public string Detalle { get; set; }
 
         [Required]
-        public decimal Last { get; set; }
+        public  string Moneda { get; set; }
 
         [Required]
-        public decimal VarPer { get; set; }
+        public string Simbolo { get; set; }
 
         [Required]
-        public string CapMarket { get; set; }
-
-        [Required]
-        public decimal Volume { get; set; }
+        public string Tipo { get; set; }
     }
 }

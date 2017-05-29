@@ -1,22 +1,19 @@
-﻿using CodingChallenge.DataAccess;
+﻿using CodingChallenge.Data.DataAccess;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CodingChallenge.BusinessLogic
 {
     public class TitleHandler
     {
-        public ITitleRepository _repo;
-        public TitleHandler(ITitleRepository repo)
+        MockRepository repo = new MockRepository();
+        public List<Data.Classes.Titulo> GetTitles()
         {
-            _repo = repo;
+            return repo.TituloRepository.GetTitulos().ToList();
         }
-        public List<Title> ToList()
+        public Data.Classes.Titulo Search(int id)
         {
-            return _repo.ToList();
-        }
-        public Title Search(int id)
-        {
-            return _repo.Search(id);
+            return repo.TituloRepository.GetTitulos().FirstOrDefault(x => x.Id == id);
         }
     }
 }
